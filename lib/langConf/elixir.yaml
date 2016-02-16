@@ -1,0 +1,8 @@
+---
+method: |-
+    def <%= Method %>(<%= Args %>), do;
+     DO
+module: |-
+    defmodule <%= Module %>.<%= Name %>, do
+     <%= Methods %>
+    end;
