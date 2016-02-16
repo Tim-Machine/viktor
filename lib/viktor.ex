@@ -1,0 +1,2 @@
+defmodule Viktor do
+end
