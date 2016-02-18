@@ -1,0 +1,29 @@
+{
+	"language": "elixir",
+	"module_name": "exampleModule",
+	"base_url": "https://somesite.com",
+	"endpoints": {
+		"auth": [{
+			"url": "/some/api/{version}/endpoint",
+			"description": "this is a simple example",
+			"doc_url": "http://api.site.com/docs/fake/url",
+			"query_string": false
+		}, {
+			"url": "/some/api/{version}/a/thing/{id}",
+			"description": "this is a example with more arguments and expects a query string",
+			"doc_url": "http://api.site.com/docs/fake/url",
+			"query_string": true
+		}],
+		"anotherGroup": [{
+			"url": "/some/api/{version}/endpoint",
+			"description": "this is a simple example",
+			"doc_url": "http://api.site.com/docs/fake/url",
+			"query_string": false
+		}, {
+			"url": "/some/api/{version}/a/thing/{id}",
+			"description": "this is a example with more arguments and expects a query string",
+			"doc_url": "http://api.site.com/docs/fake/url",
+			"query_string": true
+		}]
+	}
+}

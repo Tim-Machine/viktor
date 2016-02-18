@@ -7,6 +7,7 @@ defmodule Viktor.Mixfile do
      elixir: "~> 1.2",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
+     escript: escript,
      deps: deps]
   end
 
@@ -28,5 +29,11 @@ defmodule Viktor.Mixfile do
   # Type "mix help deps" for more examples and options
   defp deps do
     [{:anubis, "~> 0.3.0"}]
+  end
+
+  def escript do
+    [
+      main_module: Viktor.Cli
+    ]
   end
 end
